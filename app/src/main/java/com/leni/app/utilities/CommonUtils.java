@@ -25,4 +25,19 @@ public class CommonUtils {
         }
         return bookDatesList;
     }
+
+    /**
+     * to verify that FROM date is at least 1 day before TO date
+     * 
+     * @param from check-in date
+     * @param to   check-out date
+     * @return true/false
+     */
+    public boolean validateDates(String from, String to) {
+        if (LocalDate.parse(from).isBefore(LocalDate.parse(to))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

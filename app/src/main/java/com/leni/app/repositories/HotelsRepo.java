@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.leni.app.Documents.HotelsDocument;
+import com.leni.app.documents.HotelsDocument;
 
 @Repository
 public interface HotelsRepo extends MongoRepository<HotelsDocument, String> {
