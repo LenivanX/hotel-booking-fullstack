@@ -9,15 +9,15 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Document("hotels")
+@Document("bookings")
 @Getter
 @Setter
 @ToString
-public class HotelsDocument {
+public class BookingsDocument {
     @Id
     String _id;
-    String location;
-    String type;
-    Integer capacity;
-    List<String> booked;
+    List<String> rooms;
+    String from;
+    String to;
+    String bookedAt;
 }
